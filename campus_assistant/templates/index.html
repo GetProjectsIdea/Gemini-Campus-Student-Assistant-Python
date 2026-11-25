@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gemini Campus Assistant</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo">✦</span> Campus Saathi <small>Gemini campus &amp; student assistant · v{{ version }}</small></div>
+  <div class="controls">
+    <label>Language
+      <select id="lang">{% for k, v in languages.items() %}<option value="{{ k }}" {% if k == default_lang %}selected{% endif %}>{{ v }}</option>{% endfor %}</select>
+    </label>
+    <span class="pill {{ 'ok' if backend == 'gemini' else 'mock' }}" id="backend">{{ 'Gemini · ' + model if backend == 'gemini' else 'Offline mock backend' }}</span>
+    <span class="pill" id="quota"></span>
+  </div>
+</header>
+<nav class="tabs">
+  <button class="tab active" data-tab="ask">Ask</button>
+  <button class="tab" data-tab="timetable">Timetable</button>
+  <button class="tab" data-tab="notes">Notes</button>
+  <button class="tab" data-tab="faq">Campus FAQ</button>
+</nav>
+<main>
+  <section id="tab-ask" class="panel active">
+    <div class="cards" id="nextcard"></div>
+    <div class="row">
+      <input id="ask-q" placeholder="Ask anything: next class? library timings? what is BCNF? kal kaunsi class hai?" autocomplete="off">
+      <button id="ask-go" class="primary">Ask</button>
+    </div>
+    <div class="chips">
+      <button class="chip">What is my next class?</button>
+      <button class="chip">kal kaunsi classes hai?</button>
+      <button class="chip">Library timings on Saturday?</button>
+      <button class="chip">How much attendance do I need?</button>
+      <button class="chip">What is transitive dependency in 3NF?</button>
+    </div>
+    <div id="ask-out" class="answers"></div>
+  </section>
+
+  <section id="tab-timetable" class="panel">
+    <div class="tt-head">
+      <div id="tt-now"></div>
+      <div class="tt-actions">
+        <a class="btn" href="/api/timetable.ics" download>Export .ics (Google Calendar)</a>
+        <label class="btn">Load CSV<input type="file" id="tt-file" accept=".csv,text/csv" hidden></label>
+      </div>
+    </div>
+    <div id="tt-grid" class="grid"></div>
+    <div id="tt-side" class="tt-side"></div>
+  </section>
+
+  <section id="tab-notes" class="panel">
+    <div class="notes-grid">
+      <div>
+        <div class="row">
+          <input id="notes-name" value="dbms-normalization.md" aria-label="file name">
+          <label class="btn">Open .md / .txt<input type="file" id="notes-file" accept=".md,.txt,text/plain,text/markdown" hidden></label>
+        </div>
+        <textarea id="notes-text" rows="18" placeholder="Paste your class notes here"></textarea>
+      </div>
+      <div>
+        <div class="row">
+          <button id="notes-sum" class="primary">Summarise</button>
+          <button id="notes-cards">Flashcards</button>
+        </div>
+        <div class="row">
+          <input id="notes-q" placeholder="Ask a question about these notes">
+          <button id="notes-ask">Ask notes</button>
+        </div>
+        <div id="notes-out" class="answers"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tab-faq" class="panel">
+    <div class="row">
+      <input id="faq-q" placeholder="Hostel gate timing? Revaluation fee? Placement eligibility?">
+      <button id="faq-go" class="primary">Search FAQ</button>
+    </div>
+    <p class="muted" id="faq-src"></p>
+    <div id="faq-out" class="answers"></div>
+  </section>
+</main>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

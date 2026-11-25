@@ -1,0 +1,58 @@
+Gemini Campus Assistant demo · backend=mock · now=Mon 23 Nov 2026 09:40
+
+Q: What is my next class?
+Now (Mon 09:40): 09:00-10:00 | Database Management Systems (CS301) | Lecture | LT-2 | Dr. A. Sharma (ends 10:00)
+Next class today at 10:00 (in 20 min): 10:00-11:00 | Operating Systems (CS302) | Lecture | LT-2 | Prof. R. Iyer
+   [timetable · local]
+
+Q: kal kaunsi classes hai?
+Tuesday 24 Nov 2026
+Tue:
+  09:00-10:00 | Computer Networks (CS303) | Lecture | LT-1 | Dr. M. Nair
+  10:00-11:00 | Database Management Systems (CS301) | Lecture | LT-2 | Dr. A. Sharma
+  11:15-12:15 | Universal Human Values (HS301) | Lecture | Seminar Hall | Dr. K. Joshi
+  14:00-16:00 | Operating Systems Lab (CS352) | Lab | Lab 1 (CSE Block) | Prof. R. Iyer
+   [timetable · local]
+
+Q: When is the DBMS lab?
+Mon 14:00-17:00 | DBMS Lab (CS351) | Lab | Lab 3 (CSE Block) | Ms. P. Verma
+   [timetable · local]
+
+Q: Library timings on Saturday?
+The central library is open from 8:00 AM to 10:00 PM on weekdays and from 9:00 AM to 5:00 PM on Saturdays. [1]
+   sources: library.md › Library timings
+   [faq · mock]
+
+Q: What is the fine for a late library book?
+The overdue fine is Rs 2 per book per day. [1] Books can be renewed twice online through the library OPAC if no one has reserved them. [2]
+   sources: library.md › Library fine; library.md › Borrowing books
+   [faq · mock]
+
+Q: How much attendance do I need to sit the end-sem exam?
+Students need at least 75% attendance in every course to be allowed to sit the end-semester exam. [1]
+   sources: exams.md › Minimum attendance; exams.md › Mid-semester and end-semester exams
+   [faq · mock]
+
+Q: What is transitive dependency in 3NF?
+A relation is in third normal form when it is in 2NF and no non-prime attribute is transitively dependent on a candidate key. [1] If roll_no -> dept_id and dept_id -> dept_name, then dept_name is transitively dependent on roll_no and should move to a separate department table. [1] Always check that the decomposition is lossless and, for 3NF, dependency preserving. [3]
+   sources: dbms-normalization.md › Third normal form (3NF); dbms-normalization.md › Boyce-Codd normal form (BCNF)
+   [notes_qa · mock]
+
+Q: Who won the cricket world cup?
+I could not find this in your timetable, notes or campus documents. (Offline mock mode: set GEMINI_API_KEY for general study questions.)
+   [general · local]
+
+Summary of os-cpu-scheduling.md:
+**Summary**
+- Good scheduling improves CPU utilisation and throughput and reduces waiting time, turnaround time and response time.
+- Turnaround time = completion time - arrival time.
+- Waiting time = turnaround time - burst time.
+- Response time = time of first CPU allocation - arrival time.
+
+**Key terms:** time, processes, process, waiting, priority, scheduling, turnaround, long
+
+**Likely exam questions**
+1. Explain Goal of CPU scheduling with an example.
+2. Explain First Come First Served (FCFS) with an example.
+3. Explain Shortest Job First (SJF) with an example.
+4. Explain Round Robin (RR) with an example.

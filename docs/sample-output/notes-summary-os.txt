@@ -1,0 +1,17 @@
+**Summary**
+- Good scheduling improves CPU utilisation and throughput and reduces waiting time, turnaround time and response time.
+- Non-preemptive SJF gives the minimum average waiting time for a given set of processes, but it needs the burst time in advance and can cause starvation of long processes.
+- Low-priority processes can starve; aging solves starvation by gradually increasing the priority of processes that wait for a long time.
+- Turnaround time = completion time - arrival time.
+- Waiting time = turnaround time - burst time.
+- Response time = time of first CPU allocation - arrival time.
+
+**Key terms:** time, processes, process, waiting, priority, scheduling, turnaround, long
+
+**Likely exam questions**
+1. Explain Goal of CPU scheduling with an example.
+2. Explain First Come First Served (FCFS) with an example.
+3. Explain Shortest Job First (SJF) with an example.
+4. Explain Round Robin (RR) with an example.
+
+— summary · mock · mock-extractive

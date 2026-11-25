@@ -1,0 +1,4 @@
+Now (Mon 09:40): 09:00-10:00 | Database Management Systems (CS301) | Lecture | LT-2 | Dr. A. Sharma (ends 10:00)
+Next class today at 10:00 (in 20 min): 10:00-11:00 | Operating Systems (CS302) | Lecture | LT-2 | Prof. R. Iyer
+
+— timetable · local · timetable-csv

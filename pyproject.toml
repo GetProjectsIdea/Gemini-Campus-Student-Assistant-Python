@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gemini-campus-assistant"
+version = "1.0.0"
+description = "Gemini API campus and student assistant for Indian colleges: timetable (next class, free slots, .ics), notes summariser / flashcards / Q&A and a campus FAQ chatbot with retrieval and citations. Flask UI + CLI, runs offline with a mock backend."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Pardeep Patel" }]
+requires-python = ">=3.10"
+dependencies = ["Flask>=3.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+campus-assistant = "campus_assistant.cli:main"
+
+[project.urls]
+Homepage = "https://getprojects.org/gemini-student-assistant-python/"
+Source = "https://github.com/GetProjectsIdea/Gemini-Campus-Student-Assistant-Python"
+
+[tool.setuptools]
+packages = ["campus_assistant"]
+
+[tool.setuptools.package-data]
+campus_assistant = ["templates/*.html", "static/*.css", "static/*.js"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "tests"]

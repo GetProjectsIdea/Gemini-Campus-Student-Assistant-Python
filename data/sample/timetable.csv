@@ -1,0 +1,21 @@
+day,start,end,course,code,type,room,faculty,short
+Mon,09:00,10:00,Database Management Systems,CS301,Lecture,LT-2,Dr. A. Sharma,DBMS
+Mon,10:00,11:00,Operating Systems,CS302,Lecture,LT-2,Prof. R. Iyer,OS
+Mon,11:15,12:15,Engineering Mathematics III,MA301,Tutorial,Room 204,Dr. S. Khan,M3/Maths
+Mon,14:00,17:00,DBMS Lab,CS351,Lab,Lab 3 (CSE Block),Ms. P. Verma,DBMS
+Tue,09:00,10:00,Computer Networks,CS303,Lecture,LT-1,Dr. M. Nair,CN
+Tue,10:00,11:00,Database Management Systems,CS301,Lecture,LT-2,Dr. A. Sharma,DBMS
+Tue,11:15,12:15,Universal Human Values,HS301,Lecture,Seminar Hall,Dr. K. Joshi,UHV
+Tue,14:00,16:00,Operating Systems Lab,CS352,Lab,Lab 1 (CSE Block),Prof. R. Iyer,OS
+Wed,09:00,10:00,Operating Systems,CS302,Lecture,LT-2,Prof. R. Iyer,OS
+Wed,10:00,11:00,Engineering Mathematics III,MA301,Lecture,LT-3,Dr. S. Khan,M3/Maths
+Wed,11:15,12:15,Computer Networks,CS303,Lecture,LT-1,Dr. M. Nair,CN
+Wed,15:00,16:00,Training & Placement Talk,TNP01,Seminar,Auditorium,TPO Office,TnP/placement
+Thu,09:00,10:00,Database Management Systems,CS301,Lecture,LT-2,Dr. A. Sharma,DBMS
+Thu,10:00,11:00,Computer Networks,CS303,Lecture,LT-1,Dr. M. Nair,CN
+Thu,11:15,12:15,Operating Systems,CS302,Tutorial,Room 210,Prof. R. Iyer,OS
+Thu,14:00,16:00,Computer Networks Lab,CS353,Lab,Lab 2 (CSE Block),Dr. M. Nair,CN
+Fri,09:00,10:00,Engineering Mathematics III,MA301,Lecture,LT-3,Dr. S. Khan,M3/Maths
+Fri,10:00,11:00,Universal Human Values,HS301,Lecture,Seminar Hall,Dr. K. Joshi,UHV
+Fri,11:15,13:15,Mini Project,CS390,Project,Project Lab,Dr. A. Sharma,
+Sat,10:00,12:00,Coding Club (optional),CLB01,Club,Lab 1 (CSE Block),Student Coordinator,
