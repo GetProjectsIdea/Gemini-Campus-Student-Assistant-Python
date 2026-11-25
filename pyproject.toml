@@ -26,7 +26,7 @@ Source = "https://github.com/GetProjectsIdea/Gemini-Campus-Student-Assistant-Pyt
 packages = ["campus_assistant"]
 
 [tool.setuptools.package-data]
-campus_assistant = ["templates/*.html", "static/*.css", "static/*.js"]
+campus_assistant = ["templates/*.html", "static/*.css", "static/*.js", "sample/*.csv", "sample/faq/*.md", "sample/notes/*.md"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

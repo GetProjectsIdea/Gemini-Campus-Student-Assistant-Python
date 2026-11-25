@@ -108,7 +108,7 @@ python -m campus_assistant --now "2026-11-23 09:40" ask "next class"  # pretend 
 | Campus FAQ | `CAMPUS_FAQ_DIR` or `--faq-dir` | folder of `.md` / `.txt` files; use `##` headings per topic |
 | Notes | `CAMPUS_NOTES_DIR` or `--notes-dir` | folder of `.md` / `.txt` files |
 
-The samples in `data/sample/` are a made-up engineering college (B.Tech CSE, 5th semester). Replace
+The samples in `campus_assistant/sample/` are a made-up engineering college (B.Tech CSE, 5th semester). Replace
 them with your own handbook, hostel rules and timetable. In the web UI you can also load a timetable
 CSV and paste or open notes without touching any files.
 
@@ -132,7 +132,7 @@ campus_assistant/
   textutil.py    tokenizer, sentence splitter, markdown chunker, PII redaction
   usage.py       daily request cap
   web.py         Flask UI + JSON API     cli.py  command line     demo.py  offline tour
-data/sample/     timetable.csv, faq/*.md, notes/*.md
+  sample/      timetable.csv, faq/*.md, notes/*.md (demo college data, shipped with the package)
 tests/           223 pytest tests (no network)
 docs/            screenshots and sample outputs
 ```

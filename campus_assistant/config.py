@@ -6,7 +6,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 PACKAGE_DIR = Path(__file__).resolve().parent
-SAMPLE_DIR = PACKAGE_DIR.parent / "data" / "sample"
+SAMPLE_DIR = PACKAGE_DIR / "sample"   # ships inside the package, so "pip install ." works too
 
 DEFAULT_MODEL = "gemini-4-hydrogen"        # free tier on the Gemini API (Nov 2026)
 FALLBACK_MODEL = "gemini-3.5-flash-lite"   # cheaper / higher free-tier daily limit
